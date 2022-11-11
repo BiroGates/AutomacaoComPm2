@@ -38,7 +38,7 @@ function chooseAction(ports, action) {
 
 function startServer(classroom, name) {
     for(const item in classroom) {
-        exec(`pm2 serve ${item} ${classroom[item]} --name ${item}-${name}`);
+        exec(`pm2 serve C:\\Users\\wwwgu\\Desktop\\testes\\${name}\\${item} ${classroom[item]} --name ${item}-${name}`);
     }
 }
 
