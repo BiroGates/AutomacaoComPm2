@@ -9,7 +9,8 @@ function loadPorts() {
 }
 
 function showMessage() {
-    console.log('| / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / | ');
+    console.log('| / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / |');
+    console.log('|                                                                 |');
     console.log('| Escolha uma ação:                                               |');
     console.log('|                                                                 |');
     console.log('| Iniciar servidores INFOA digite: 1                              |');
@@ -23,7 +24,7 @@ function showMessage() {
     console.log('| Mostar todos os processos rodando: 7                            |');
     console.log('| Sair digite: 0                                                  |');
     console.log('|                                                                 |');
-    console.log('| / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / | ');
+    console.log('| / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / |');
 }
 
 function chooseAction(ports, action) {
@@ -53,7 +54,7 @@ function main() {
         showMessage();
         
         while(true){
-            process.stdout.write('| Escolha sua ação: ');
+            console.log('| Escolha sua ação: ');
             let action = Number(readLine());
             
             chooseAction(ports, action);
